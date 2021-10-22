@@ -42,11 +42,14 @@ namespace KeyVaultTool
             this.exportToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.keyVaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.userSecretsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,7 +106,7 @@ namespace KeyVaultTool
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(220, 23);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "ngr-test-kv";
+            this.textBox1.Text = "hs-security-kv-prod";
             // 
             // menuStrip1
             // 
@@ -119,6 +122,8 @@ namespace KeyVaultTool
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -143,25 +148,33 @@ namespace KeyVaultTool
             // 
             this.exportToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.keyVaultToolStripMenuItem,
-            this.fileToolStripMenuItem1});
+            this.fileToolStripMenuItem1,
+            this.userSecretsToolStripMenuItem});
             this.exportToolStripMenuItem1.Name = "exportToolStripMenuItem1";
-            this.exportToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
+            this.exportToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.exportToolStripMenuItem1.Text = "&Export to";
             this.exportToolStripMenuItem1.Click += new System.EventHandler(this.exportToolStripMenuItem1_Click);
             // 
             // keyVaultToolStripMenuItem
             // 
             this.keyVaultToolStripMenuItem.Name = "keyVaultToolStripMenuItem";
-            this.keyVaultToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.keyVaultToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.keyVaultToolStripMenuItem.Text = "&Key Vault";
             this.keyVaultToolStripMenuItem.Click += new System.EventHandler(this.keyVaultToolStripMenuItem_Click);
             // 
             // fileToolStripMenuItem1
             // 
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
-            this.fileToolStripMenuItem1.Text = "&File";
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.fileToolStripMenuItem1.Text = "Json File";
             this.fileToolStripMenuItem1.Click += new System.EventHandler(this.fileToolStripMenuItem1_Click);
+            // 
+            // userSecretsToolStripMenuItem
+            // 
+            this.userSecretsToolStripMenuItem.Name = "userSecretsToolStripMenuItem";
+            this.userSecretsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userSecretsToolStripMenuItem.Text = "User Secrets";
+            this.userSecretsToolStripMenuItem.Click += new System.EventHandler(this.userSecretsToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -204,6 +217,20 @@ namespace KeyVaultTool
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "&Save";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Text = "Open";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -221,7 +248,6 @@ namespace KeyVaultTool
             this.MinimumSize = new System.Drawing.Size(506, 556);
             this.Name = "MainForm";
             this.Text = "Key Vault Tool";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -249,6 +275,9 @@ namespace KeyVaultTool
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ToolStripMenuItem userSecretsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }
 
